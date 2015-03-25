@@ -4,6 +4,3 @@ ghc:
 - 7.6
 - 7.4
 after_script: dpkg --get-selections | grep -v deinstall | awk '{ print $1 }'
-env:
-  global:
-    secure: QVPZjNKWZQO0bFtKdKfMO2JSugCINj/L96A08AGUTOqR9U3rpszWlGOWHtzt0IzubdNtPMP9RVFT51Y7wV58yb3xnUHNND/WAJbHJshLIG2yaJA4RD877y8VEEnFqvkRwNorEmsne5x2F5fRlVuEcNvHHkXSRIVQo4/pCEBn0OM=

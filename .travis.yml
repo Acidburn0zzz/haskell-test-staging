@@ -1,6 +1,12 @@
 language: haskell
+
+sudo: required
+
+group: edge
+
 ghc:
 - 7.8
 - 7.6
 - 7.4
+
 after_script: dpkg --get-selections | grep -v deinstall | awk '{ print $1 }'

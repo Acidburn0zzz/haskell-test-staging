@@ -1,9 +1,12 @@
 language: haskell
+dist: trusty
+group: edge
 ghc:
-- 7.8
-- 7.6
 - 7.4
-after_script: dpkg --get-selections | grep -v deinstall | awk '{ print $1 }'
+- 7.6
+- 7.8
+- 7.10
+- 8.0
 env:
   global:
     secure: eybRFRk4XYKvdCdgagTT+OGn4bu71T7UoTxnHCZSmVhy59rc1Uy4G5Uvk6+qRK4tH5hkGFn1DnT/UOxPt/978P7qsLACbTR2ZDP6Dn7YLHy/4DmLlMfmRJDwp8/J6tYKFuXpPObv6pMArQMlLB4PvhFWxnF/+nxzmx0DgGWjI6U=
